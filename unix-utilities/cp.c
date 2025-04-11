@@ -38,7 +38,7 @@ int main(int argc, char* argv[]) {
 
 	int fd_src = open(argv[1], O_RDONLY);
 	if (fd_src < 0) {
-		char* error_msg_1 = ": cannot state '";
+		char* error_msg_1 = ": cannot stat '";
 		char* error_msg_2 = "': No such file or directory\n";
 		// write to std error file --> "%s: cannot stat '%s': No such file or directory\n", argv[0], argv[1]
 		if ((write(2, argv[0], strlen(argv[0])) < 0) || (write(2, error_msg_1, strlen(error_msg_1)) < 0)
