@@ -15,7 +15,7 @@ gcc -o <executableName> <sourceFile>.c
 Example for Femto Shell:
 
 ```bash
-gcc -o myFemtoShell myFemtoShell.c
+gcc -o myFemtoShell FemtoShell.c
 ```
 
 ---
